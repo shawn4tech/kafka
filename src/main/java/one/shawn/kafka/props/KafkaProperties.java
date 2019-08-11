@@ -11,7 +11,16 @@ import org.springframework.context.annotation.Configuration;
 public class KafkaProperties {
 	private String bootstrapAddress;
 	private String topicName;
+	private String groupId;
 	
+	public String getGroupId() {
+		return groupId;
+	}
+
+	public void setGroupId(String groupId) {
+		this.groupId = groupId;
+	}
+
 	public String getBootstrapAddress() {
 		return bootstrapAddress;
 	}
